@@ -4,12 +4,12 @@ const app = express();
 app.set("view engine", "ejs");
 
 app.get("/", function(req,res) {
-    res.render("index");
+    res.render("pages/index");
 });
 
 app.get("/sobre", function(req,res) {
-    res.render("about");
+    res.render("pages/about");
 });
 
 app.listen(3000);
-console.log("Rodando")
+console.log("Servidor funcionando")
